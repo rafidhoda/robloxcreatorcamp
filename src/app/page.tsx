@@ -132,6 +132,65 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Why This Is Different Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Why This Is Different
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-700 mb-4">
+              This isn&apos;t just another coding camp.
+            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              It&apos;s a chance for your child to transform from consumer to creator — using what they already love: Roblox.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+              <div className="text-4xl mb-4">🎮</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                We Start With What They Already Love
+              </h3>
+              <p className="text-gray-700">
+                No more forcing abstract concepts. We use Roblox to unlock curiosity about game design, storytelling, video editing, AI, and web creation.
+              </p>
+            </div>
+
+            <div className="bg-purple-50 p-8 rounded-2xl border border-purple-100">
+              <div className="text-4xl mb-4">✨</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                A Shift in Identity
+              </h3>
+              <p className="text-gray-700">
+                It&apos;s not just about skills. It&apos;s about your child seeing themselves differently — as someone who can build and share their ideas with the world.
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                A Full Creator Journey
+              </h3>
+              <p className="text-gray-700">
+                Most camps teach one thing. This camp gives your child the complete experience — from building a game to launching it like a pro.
+              </p>
+            </div>
+
+            <div className="bg-yellow-50 p-8 rounded-2xl border border-yellow-100">
+              <div className="text-4xl mb-4">🤖</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                AI as a Creative Superpower
+              </h3>
+              <p className="text-gray-700">
+                We don&apos;t just talk about AI. We show kids how to use it to bring their ideas to life, making the future feel fun, not scary.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
