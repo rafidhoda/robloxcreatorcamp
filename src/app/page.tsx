@@ -42,17 +42,39 @@ export default function Home() {
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
               Turn Roblox time into real-world skills.
-          </h1>
+            </h1>
             <p className="text-base md:text-lg text-gray-700 mb-6">
-              In this 2-day camp, your child will build a game, promote it with a video,
-              code a website to show it off, and design a poster using AI.
-          </p>
-          <a
-            href="#signup"
-              className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
-            >
-              Reserve Your Spot – $49 Setup Call
-            </a>
+              In this 2-day camp, your child will:
+            </p>
+            <div className="space-y-2 mb-6 text-gray-700">
+              <div className="flex items-center gap-3">
+                <span className="text-xl">🎮</span>
+                <span>Build a Roblox game</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-xl">🎥</span>
+                <span>Create a promotional video</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-xl">💻</span>
+                <span>Code a website to showcase it</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-xl">🎨</span>
+                <span>Design a poster using AI</span>
+              </div>
+            </div>
+            <div className="flex flex-col items-center md:items-start gap-3">
+              <a
+                href="#signup"
+                className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
+              >
+                Reserve Your Spot – $49 Setup Call
+              </a>
+              <p className="text-sm text-gray-600 text-center md:text-left">
+                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+              </p>
+            </div>
           </div>
 
           {/* Right Video Embed */}
