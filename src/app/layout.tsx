@@ -30,6 +30,12 @@ export default function RootLayout({
           data-domain="robloxcreatorcamp.com" 
           src="https://plausible.io/js/script.js"
         ></script>
+        <script 
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="e251d2d6-eccb-44c2-b1f3-616b385ee2d2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
+          }}
+        />
       </head>
       <body
         className={`${geist.variable} ${geistMono.variable} antialiased`}
