@@ -144,7 +144,11 @@ export default function Home() {
               This isn&apos;t just another coding camp.
             </p>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              It&apos;s a chance for your child to transform from consumer to creator — using what they already love: Roblox.
+              It&apos;s a chance for your child to transform from{" "}
+              <span className="font-bold text-gray-800 bg-gray-100 px-2 py-1 rounded">consumer</span>
+              {" "}to{" "}
+              <span className="font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">creator</span>
+              {" "}<br></br>— using what they already love: Roblox.
             </p>
           </div>
 
