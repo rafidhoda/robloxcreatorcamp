@@ -1,13 +1,13 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-12">
-      <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-8">
+      <section className="max-w-4xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
             Turn Roblox time into real-world skills.
           </h1>
-          <p className="text-lg text-gray-700 mb-6">
+          <p className="text-base md:text-lg text-gray-700 mb-6">
             In this 2-day camp, your child will build a game, promote it with a video,
             code a website to show it off, and design a poster using AI.
           </p>
