@@ -51,7 +51,7 @@ export default function Home() {
             href="#signup"
               className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
             >
-              Book Setup Call - $49
+              Reserve Your Spot – $49 Setup Call
             </a>
           </div>
 
