@@ -253,6 +253,156 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* What You'll Need Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+              🔧 What You&apos;ll Need to Join
+            </h2>
+            <p className="text-lg text-gray-700">
+              Before we begin, here&apos;s what your child needs to participate:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">💻 Computer Requirements</h3>
+              <p className="text-gray-700 text-sm">A Windows or Mac computer (Roblox Studio doesn&apos;t work on iPads or Chromebooks)</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">🎮 Roblox Account</h3>
+              <p className="text-gray-700 text-sm">A Roblox account (free to create)</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">📹 Zoom Setup</h3>
+              <p className="text-gray-700 text-sm">Zoom with working camera and mic</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">🌐 Internet Connection</h3>
+              <p className="text-gray-700 text-sm">A stable internet connection</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">🏠 Quiet Space</h3>
+              <p className="text-gray-700 text-sm">A quiet space for 3 hours at a time</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">👨‍👩‍👧‍👦 Parent Support</h3>
+              <p className="text-gray-700 text-sm">A parent nearby to assist with setup if needed</p>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 text-center">
+            <p className="text-lg font-semibold text-blue-800">
+              ✅ Don&apos;t worry — you&apos;ll get a 30-minute 1-on-1 setup call with Rafid to make sure everything&apos;s ready before the camp starts!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How Registration Works Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+              📝 How to Join the Camp
+            </h2>
+            <p className="text-lg text-gray-700">
+              Here&apos;s how to reserve your spot:
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {/* Step 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0">1</div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    Pay $49 to book a 30-minute 1-on-1 setup call with Rafid
+                  </h3>
+                  <p className="text-gray-600 text-sm">(This session is non-refundable, and part of your total tuition)</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0">2</div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">In the call:</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span>
+                      We&apos;ll install Roblox Studio
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span>
+                      Test Roblox Studio
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span>
+                      Confirm your time slot
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span>
+                      Answer any questions you have
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0">3</div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Like what you see?</h3>
+                  <p className="text-gray-700 mb-3">Pay the remaining $100 after the call to lock in your seat</p>
+                  <p className="text-gray-600 text-sm">Camp runs over two days (6 hours total)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200 text-center mt-8">
+            <p className="text-lg font-bold text-yellow-800">
+              ⏰ Spots are limited to 12 students per class, and they fill fast!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section id="signup" className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+            🚀 Ready to Get Started?
+          </h2>
+          <p className="text-lg text-gray-700 mb-8">
+            Click the button below to book your setup call and reserve your child&apos;s seat in the Roblox Creator Camp.
+          </p>
+          
+          <a
+            href="#"
+            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+          >
+            👉 Book Your Spot Now
+          </a>
+          
+          <p className="text-gray-600 mt-4 text-sm">
+            Setup call: $49 • Total tuition: $149 • Limited to 12 students
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
