@@ -1,23 +1,57 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 export default function Home() {
+  const [timeSlots, setTimeSlots] = useState({
+    early: 'Loading...',
+    late: 'Loading...'
+  });
+
+  useEffect(() => {
+    // Oslo times (base timezone - CET/CEST)
+    const osloEarlyStart = new Date('2025-08-04T09:00:00+02:00'); // 9 AM Oslo time
+    const osloEarlyEnd = new Date('2025-08-04T12:00:00+02:00');   // 12 PM Oslo time  
+    const osloLateStart = new Date('2025-08-04T13:00:00+02:00');  // 1 PM Oslo time
+    const osloLateEnd = new Date('2025-08-04T16:00:00+02:00');    // 4 PM Oslo time
+    
+    // Format times for user's timezone
+    const formatTime = (date: Date) => {
+      return date.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+      });
+    };
+    
+    const earlyTime = `${formatTime(osloEarlyStart)} - ${formatTime(osloEarlyEnd)}`;
+    const lateTime = `${formatTime(osloLateStart)} - ${formatTime(osloLateEnd)}`;
+    
+    setTimeSlots({
+      early: earlyTime,
+      late: lateTime
+    });
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
-      {/* Hero Section */}
+        {/* Hero Section */}
       <section className="flex flex-col items-center justify-center px-4 py-8">
         <div className="max-w-4xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Left Text Content */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
               Turn Roblox time into real-world skills.
-            </h1>
+          </h1>
             <p className="text-base md:text-lg text-gray-700 mb-6">
               In this 2-day camp, your child will build a game, promote it with a video,
               code a website to show it off, and design a poster using AI.
-            </p>
-            <a
-              href="#signup"
+          </p>
+          <a
+            href="#signup"
               className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
             >
-              Reserve Your Spot – Only 12 Seats per Class
+              Reserve Your Spot – Next Camps: Aug 4-10
             </a>
           </div>
 
@@ -148,7 +182,7 @@ export default function Home() {
               <span className="font-bold text-gray-800 bg-gray-100 px-2 py-1 rounded">consumer</span>
               {" "}to{" "}
               <span className="font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">creator</span>
-              {" "}<br></br>— using what they already love: Roblox.
+              {" "}— using what they already love: Roblox.
             </p>
           </div>
 
@@ -194,7 +228,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
       {/* Meet Rafid Section */}
       <section className="py-16 px-4 bg-gray-50">
@@ -306,13 +340,118 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How Registration Works Section */}
+      {/* Schedule Section */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+              📅 Upcoming Camp Dates
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">
+              Choose the dates that work best for your family. Each camp runs 3 hours per day.
+            </p>
+            <div className="bg-blue-50 p-3 rounded-lg inline-block">
+              <p className="text-sm text-blue-700 font-semibold">
+                🌍 Times shown in your local timezone
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div className="text-center mb-4">
+                <div className="text-2xl mb-2">📚</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Weekday Session</h3>
+                <p className="text-lg font-semibold text-blue-600 mb-1">Mon - Tue</p>
+                <p className="text-2xl font-bold text-gray-900">Aug 4 - 5</p>
+                <p className="text-gray-600 text-sm">2025</p>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="bg-green-50 p-4 rounded-xl border border-green-100">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-900">Early Class</span>
+                    <span className="text-green-600 font-bold">{timeSlots.early}</span>
+                  </div>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-900">Late Class</span>
+                    <span className="text-orange-600 font-bold">{timeSlots.late}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div className="text-center mb-4">
+                <div className="text-2xl mb-2">⚡</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Midweek Session</h3>
+                <p className="text-lg font-semibold text-purple-600 mb-1">Thu - Fri</p>
+                <p className="text-2xl font-bold text-gray-900">Aug 7 - 8</p>
+                <p className="text-gray-600 text-sm">2025</p>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="bg-green-50 p-4 rounded-xl border border-green-100">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-900">Early Class</span>
+                    <span className="text-green-600 font-bold">{timeSlots.early}</span>
+                  </div>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-900">Late Class</span>
+                    <span className="text-orange-600 font-bold">{timeSlots.late}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div className="text-center mb-4">
+                <div className="text-2xl mb-2">🌟</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Weekend Session</h3>
+                <p className="text-lg font-semibold text-green-600 mb-1">Sat - Sun</p>
+                <p className="text-2xl font-bold text-gray-900">Aug 9 - 10</p>
+                <p className="text-gray-600 text-sm">2025</p>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="bg-green-50 p-4 rounded-xl border border-green-100">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-900">Early Class</span>
+                    <span className="text-green-600 font-bold">{timeSlots.early}</span>
+                  </div>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-900">Late Class</span>
+                    <span className="text-orange-600 font-bold">{timeSlots.late}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 text-center mt-8">
+            <p className="text-lg font-semibold text-blue-800 mb-2">
+              You&apos;ll choose your preferred dates and time slot during the setup call
+            </p>
+            <p className="text-sm text-blue-600">
+              All times converted to your local timezone automatically
+            </p>
+          </div>
+        </div>
+        </section>
+
+      {/* How Registration Works Section */}
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
               📝 How to Join the Camp
-            </h2>
+          </h2>
             <p className="text-lg text-gray-700">
               Here&apos;s how to reserve your spot:
             </p>
@@ -378,30 +517,32 @@ export default function Home() {
               ⏰ Spots are limited to 12 students per class, and they fill fast!
             </p>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
       {/* Final CTA Section */}
       <section id="signup" className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-            🚀 Ready to Get Started?
+            Ready to turn your child into a creator?
           </h2>
           <p className="text-lg text-gray-700 mb-8">
-            Click the button below to book your setup call and reserve your child&apos;s seat in the Roblox Creator Camp.
+            Book a quick 1-on-1 setup call with Rafid. We&apos;ll install Roblox Studio, make sure everything works, and reserve your spot.
           </p>
           
           <a
-            href="#"
+            href="https://your-typeform-link.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
-            👉 Book Your Spot Now
+            👉 Book Your Setup Call – $49
           </a>
           
           <p className="text-gray-600 mt-4 text-sm">
-            Setup call: $49 • Total tuition: $149 • Limited to 12 students
+            Setup call: $49 • Total tuition: $149 • Only 12 students per class
           </p>
-        </div>
+      </div>
       </section>
     </main>
   );
