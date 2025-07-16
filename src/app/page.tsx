@@ -10,10 +10,10 @@ export default function Home() {
 
   useEffect(() => {
     // Oslo times (base timezone - CET/CEST)
-    const osloEarlyStart = new Date('2025-08-04T09:00:00+02:00'); // 9 AM Oslo time
-    const osloEarlyEnd = new Date('2025-08-04T12:00:00+02:00');   // 12 PM Oslo time  
-    const osloLateStart = new Date('2025-08-04T13:00:00+02:00');  // 1 PM Oslo time
-    const osloLateEnd = new Date('2025-08-04T16:00:00+02:00');    // 4 PM Oslo time
+    const osloEarlyStart = new Date('2025-08-04T11:00:00+02:00'); // 11 AM Oslo time
+    const osloEarlyEnd = new Date('2025-08-04T14:00:00+02:00');   // 2 PM Oslo time  
+    const osloLateStart = new Date('2025-08-04T18:00:00+02:00');  // 6 PM Oslo time
+    const osloLateEnd = new Date('2025-08-04T21:00:00+02:00');    // 9 PM Oslo time
     
     // Format times for user's timezone
     const formatTime = (date: Date) => {
