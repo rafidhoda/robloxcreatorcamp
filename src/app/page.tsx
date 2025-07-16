@@ -42,7 +42,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-              Your Child's 2-Day Journey
+              Your Child&apos;s 2-Day Journey
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Watch your child go from Roblox player to creator, building and launching their first game like a pro
