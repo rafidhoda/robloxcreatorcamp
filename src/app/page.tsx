@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-12">
-      <section className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+      <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
