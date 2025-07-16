@@ -195,6 +195,64 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Meet Rafid Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left: Photo */}
+            <div>
+              <div className="bg-white p-4 rounded-2xl shadow-lg">
+                <img 
+                  src="/images/rafid-hoda.jpg" 
+                  alt="Rafid Hoda"
+                  className="w-full aspect-square rounded-xl object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right: Content */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                Meet Rafid Hoda
+              </h2>
+              <p className="text-xl text-blue-600 font-semibold mb-8">
+                Teacher. Creator. Lifelong Nerd.
+              </p>
+
+              <div className="space-y-6 text-gray-700 leading-relaxed">
+                <p>
+                  I was just <span className="font-semibold text-blue-600">9 years old</span> when I started building things on the computer—simple games, websites, and whatever else I could imagine.
+                </p>
+
+                <p>
+                  By <span className="font-semibold text-blue-600">14</span>, I had made a video tutorial that went viral (before YouTube was even around), attracting <span className="font-semibold text-purple-600">15,000 visitors</span> to my website. That same year, I sold my first website for <span className="font-semibold text-green-600">$200</span>—to my music teacher for his rock band.
+                </p>
+
+                <p>
+                  Since then, I&apos;ve taught thousands of people how to build websites, apps, and games—both online through <span className="font-semibold text-blue-600">Scrimba</span>, <span className="font-semibold text-blue-600">freeCodeCamp</span>, and <span className="font-semibold text-blue-600">Coursera</span>, and in-person through <span className="font-semibold text-purple-600">two companies I founded</span> that specialized in teaching kids to code. I&apos;ve run countless workshops and camps designed to spark <span className="font-semibold text-green-600">excitement, confidence, and creativity</span>.
+                </p>
+
+                <p>
+                  But my real mission isn&apos;t just teaching technical skills—<span className="font-bold text-blue-600">it&apos;s inspiring people to become creators.</span>
+                </p>
+
+                <p>
+                  In a world of endless scrolling and passive consumption, I want your child to realize they can build something amazing—using the same tools they already love.
+                </p>
+
+                <p>
+                  Over these two days, I&apos;ll guide them through a fun, hands-on journey that could spark a lifelong passion.
+                </p>
+
+                <p className="text-xl font-bold text-gray-900 pt-4">
+                  Let&apos;s build something awesome.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
