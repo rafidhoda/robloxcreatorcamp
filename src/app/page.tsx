@@ -266,6 +266,16 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          <div className="flex flex-col items-center gap-3 mt-12">
+              <CtaButton>
+                Reserve Your Spot – $49 Setup Call
+              </CtaButton>
+              <p className="text-sm text-gray-600 text-center md:text-left">
+                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+              </p>
+            </div>
+
         </div>
         </section>
 
@@ -376,6 +386,15 @@ export default function Home() {
               ✅ Don&apos;t worry — you&apos;ll get a 30-minute 1-on-1 setup call with Rafid to make sure everything&apos;s ready before the camp starts!
             </p>
           </div>
+
+          <div className="flex flex-col items-center gap-3 mt-12">
+              <CtaButton>
+                Reserve Your Spot – $49 Setup Call
+              </CtaButton>
+              <p className="text-sm text-gray-600 text-center md:text-left">
+                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+              </p>
+            </div>
         </div>
       </section>
 
@@ -481,6 +500,8 @@ export default function Home() {
               All times converted to your local timezone automatically
             </p>
           </div>
+
+          
         </div>
         </section>
 
@@ -570,12 +591,12 @@ export default function Home() {
           </p>
           
           <a
-            href="https://your-typeform-link.com"
+            href="https://cal.com/rafidhoda/roblox-setup-call"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
-            👉 Book Your Setup Call – $49
+            Book Your Setup Call – $49
           </a>
           
           <p className="text-gray-600 mt-4 text-sm">
