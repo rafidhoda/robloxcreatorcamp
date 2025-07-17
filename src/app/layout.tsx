@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "2-day online camp for kids ages 9-14. Build a game, create videos, code websites & design with AI. Transform your child from consumer to creator.",
     images: [
       {
-        url: "https://robloxcreatorcamp.com/social-image.jpg",
+        url: "https://robloxcreatorcamp.com/social-image.png",
         width: 1200,
         height: 630,
         alt: "Roblox Creator Camp - 2-day online camp for kids",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Roblox Creator Camp - Turn Roblox Time into Real-World Skills",
     description: "2-day online camp for kids ages 9-14. Build a game, create videos, code websites & design with AI.",
-    images: ["https://robloxcreatorcamp.com/social-image.jpg"],
+    images: ["https://robloxcreatorcamp.com/social-image.png"],
     creator: "@rafidhoda",
   },
   robots: {
