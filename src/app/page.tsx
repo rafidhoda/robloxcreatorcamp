@@ -176,7 +176,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-gray-900">Code a Website</h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Your child builds a professional website with screenshots, description, and download button
+                  Your child builds a professional website with screenshots, description, and play button.
                 </p>
               </div>
             </div>
