@@ -604,6 +604,50 @@ export default function Home() {
           </p>
       </div>
       </section>
-    </main>
-  );
-}
+       {/* Footer */}
+       <footer className="bg-gray-900 text-white py-12 px-4">
+         <div className="max-w-6xl mx-auto">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+             {/* Company Info */}
+             <div>
+               <h3 className="text-xl font-bold mb-4">Hoda Labs</h3>
+               <p className="text-gray-300 mb-4">
+                 Teaching kids to become creators, not just consumers.
+               </p>
+               <p className="text-gray-400 text-sm">
+                 Founded by Rafid Hoda
+               </p>
+             </div>
+
+             {/* Contact */}
+             <div>
+               <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+               <div className="space-y-2 text-gray-300">
+                 <p>Questions about the camp?</p>
+                 <p className="text-yellow-400">Use the chat button below →</p>
+               </div>
+             </div>
+
+             {/* Legal */}
+             <div>
+               <h3 className="text-lg font-semibold mb-4">Camp Details</h3>
+               <div className="space-y-2 text-gray-300 text-sm">
+                 <p>Ages 9-13 welcome</p>
+                 <p>Small groups (12 students max)</p>
+                 <p>All skill levels</p>
+                 <p>Setup call included</p>
+               </div>
+             </div>
+           </div>
+
+           {/* Bottom Bar */}
+           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+             <p className="text-gray-400 text-sm">
+               © 2025 Hoda Labs. All rights reserved. | Roblox Creator Camp by Rafid Hoda
+             </p>
+           </div>
+         </div>
+       </footer>
+     </main>
+   );
+ }
