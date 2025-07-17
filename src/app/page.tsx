@@ -52,7 +52,7 @@ export default function Home() {
         <div className="max-w-4xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Left Text Content */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
               Turn Roblox time into real-world skills.
             </h1>
             <p className="text-base md:text-lg text-gray-700 mb-6">
@@ -75,6 +75,9 @@ export default function Home() {
                 <span className="text-xl">🎨</span>
                 <span>Design a poster using AI</span>
               </div>
+            </div>
+            <div className="bg-blue-100 text-blue-800 font-bold text-lg px-4 py-2 rounded-lg inline-block mb-4">
+              🎯 For ages 9-14
             </div>
             <div className="flex flex-col items-center md:items-start gap-3">
               <CtaButton>
@@ -109,8 +112,11 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
               Your Child&apos;s 2-Day Journey
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-2">
               Watch your child go from Roblox player to creator, building and launching their first game like a pro
+            </p>
+            <p className="text-blue-600 font-semibold">
+              ✨ Designed specifically for kids ages 9-14
             </p>
           </div>
 
@@ -632,7 +638,7 @@ export default function Home() {
              <div>
                <h3 className="text-lg font-semibold mb-4">Camp Details</h3>
                <div className="space-y-2 text-gray-300 text-sm">
-                 <p>Ages 9-13 welcome</p>
+                 <p className="font-semibold text-yellow-400">Ages 9-14 welcome</p>
                  <p>Small groups (12 students max)</p>
                  <p>All skill levels</p>
                  <p>Setup call included</p>
