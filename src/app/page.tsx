@@ -195,6 +195,14 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col items-center gap-3 mt-12">
+              <CtaButton>
+                Reserve Your Spot – $49 Setup Call
+              </CtaButton>
+              <p className="text-sm text-gray-600 text-center md:text-left">
+                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+              </p>
+            </div>
         </div>
       </section>
 
