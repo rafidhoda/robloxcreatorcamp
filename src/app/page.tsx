@@ -595,6 +595,42 @@ export default function Home() {
           <p className="text-lg text-gray-700 mb-8">
             Book a quick 1-on-1 setup call with Rafid. We&apos;ll install Roblox Studio, make sure everything works, and reserve your spot.
           </p>
+
+          {/* Pricing Breakdown */}
+          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 mb-8 max-w-2xl mx-auto">
+            <div className="text-center mb-6">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <span className="text-2xl text-gray-400 line-through">$249</span>
+                <span className="text-4xl font-bold text-green-600">$149</span>
+                <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">SAVE $100</span>
+              </div>
+              <p className="text-lg font-semibold text-gray-900 mb-4">Here's how it works:</p>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center justify-between p-4 bg-blue-50 rounded-xl border border-blue-100">
+                <div className="text-left">
+                  <p className="font-bold text-gray-900">Setup Call</p>
+                  <p className="text-sm text-gray-600">30-min 1-on-1 with Rafid</p>
+                </div>
+                <div className="text-2xl font-bold text-blue-600">$49</div>
+              </div>
+              
+              <div className="flex items-center justify-between p-4 bg-green-50 rounded-xl border border-green-100">
+                <div className="text-left">
+                  <p className="font-bold text-gray-900">Full Camp Access</p>
+                  <p className="text-sm text-gray-600">After you love the setup call</p>
+                </div>
+                <div className="text-2xl font-bold text-green-600">$100</div>
+              </div>
+            </div>
+            
+            <div className="border-t border-gray-300 mt-6 pt-4">
+              <p className="text-sm text-gray-600">
+                💡 <strong>No risk:</strong> Only pay the remaining $100 if you're happy after the setup call
+              </p>
+            </div>
+          </div>
           
           <a
             href="https://cal.com/rafidhoda/roblox-setup-call"
