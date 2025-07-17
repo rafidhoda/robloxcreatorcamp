@@ -557,7 +557,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
               📝 How to Join the Camp
-          </h2>
+            </h2>
             <p className="text-lg text-gray-700">
               Here&apos;s how to reserve your spot:
             </p>
@@ -623,8 +623,47 @@ export default function Home() {
               ⏰ Spots are limited to 12 students per class, and they fill fast!
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              🤔 Frequently Asked Questions
+            </h2>
           </div>
-        </section>
+          
+          <div className="space-y-8">
+            <div className="bg-white p-6 rounded-2xl border border-gray-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">What age is this camp for?</h3>
+              <p className="text-gray-700">The camp is designed for kids aged 9–14. If your child is just outside that range but excited to join, feel free to reach out via the chat — we&apos;re flexible!</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Does my child need any coding experience?</h3>
+              <p className="text-gray-700">No experience needed! We walk them through everything step-by-step. All they need is curiosity and the ability to follow instructions.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">What kind of computer do we need?</h3>
+              <p className="text-gray-700">A Mac or Windows computer is required. Roblox Studio does not work on iPads or Chromebooks. We&apos;ll get everything set up together in your 1-on-1 setup call.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">What if we&apos;re not happy after the setup call?</h3>
+              <p className="text-gray-700">No problem! The setup call ($49) is the only non-refundable part. You only pay the remaining $100 if you decide to continue with the full camp after the call.</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600">
+              ❓ <strong>Still have questions?</strong> Click the chat button in the corner — I&apos;m happy to help!
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Final CTA Section */}
       <section id="signup" className="py-16 px-4 bg-white">
