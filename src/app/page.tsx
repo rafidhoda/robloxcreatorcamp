@@ -2,6 +2,18 @@
 
 import { useEffect, useState } from 'react';
 
+// CTA Button Component
+const CtaButton = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <a
+      href="#signup"
+      className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
+    >
+      {children}
+    </a>
+  );
+};
+
 export default function Home() {
   const [timeSlots, setTimeSlots] = useState({
     early: 'Loading...',
@@ -65,12 +77,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center md:items-start gap-3">
-              <a
-                href="#signup"
-                className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
-              >
+              <CtaButton>
                 Reserve Your Spot – $49 Setup Call
-              </a>
+              </CtaButton>
               <p className="text-sm text-gray-600 text-center md:text-left">
                 <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
               </p>
