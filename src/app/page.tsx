@@ -311,7 +311,7 @@ export default function Home() {
 
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  I was just <span className="font-semibold text-blue-600">9 years old</span> when I started building things on the computer—simple games, websites, and whatever else I could imagine.
+                  I was just <span className="font-semibold text-blue-600">9 years old</span> when I started building things on the computer—simple games, animations, movies, websites, and whatever else I could imagine.
                 </p>
 
                 <p>
@@ -327,7 +327,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  In a world of endless scrolling and passive consumption, I want your child to realize they can build something amazing—using the same tools they already love.
+                  In a world of endless scrolling and passive consumption, I want your child to realize they can build something amazing.
                 </p>
 
                 <p>
@@ -351,7 +351,7 @@ export default function Home() {
               What Parents & Students Say
             </h2>
             <p className="text-lg text-gray-700">
-              Rafid has been teaching kids to code for years. Here&apos;s what families love about his approach:
+              Rafid has been teaching kids to code for years. Here&apos;s what people love about his approach:
             </p>
           </div>
 
