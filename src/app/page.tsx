@@ -343,6 +343,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+              What Parents & Students Say
+            </h2>
+            <p className="text-lg text-gray-700">
+              Rafid has been teaching kids to code for years. Here&apos;s what families love about his approach:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 - Rachel */}
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-3xl shadow-xl text-white">
+              <blockquote className="text-lg leading-relaxed mb-6">
+                "My son absolutely loves his classes. Rafid is an excellent educator who cares about the children&apos;s learning journey and is able to spark their passion for coding."
+              </blockquote>
+              <p className="font-bold text-blue-100">— Rachel</p>
+            </div>
+
+            {/* Testimonial 2 - Michal */}
+            <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-8 rounded-3xl shadow-xl text-white">
+              <blockquote className="text-lg leading-relaxed mb-6">
+                "Love the way you have talked us through the course. You have perfect skills to engage and inspire your audience."
+              </blockquote>
+              <p className="font-bold text-purple-100">— Michal</p>
+            </div>
+
+            {/* Testimonial 3 - Student */}
+            <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 rounded-3xl shadow-xl text-white">
+              <blockquote className="text-lg leading-relaxed mb-6">
+                "This was one of the best tutorials I have ever seen. Instead of just copying somebody&apos;s code, this time I felt that I used my knowledge to write the code."
+              </blockquote>
+              <p className="font-bold text-green-100">— Student</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What You'll Need Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
