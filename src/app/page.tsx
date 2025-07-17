@@ -359,7 +359,7 @@ export default function Home() {
             {/* Testimonial 1 - Rachel */}
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-3xl shadow-xl text-white">
               <blockquote className="text-lg leading-relaxed mb-6">
-                "My son absolutely loves his classes. Rafid is an excellent educator who cares about the children&apos;s learning journey and is able to spark their passion for coding."
+                &quot;My son absolutely loves his classes. Rafid is an excellent educator who cares about the children&apos;s learning journey and is able to spark their passion for coding.&quot;
               </blockquote>
               <p className="font-bold text-blue-100">— Rachel</p>
             </div>
@@ -367,7 +367,7 @@ export default function Home() {
             {/* Testimonial 2 - Michal */}
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-8 rounded-3xl shadow-xl text-white">
               <blockquote className="text-lg leading-relaxed mb-6">
-                "Love the way you have talked us through the course. You have perfect skills to engage and inspire your audience."
+                &quot;Love the way you have talked us through the course. You have perfect skills to engage and inspire your audience.&quot;
               </blockquote>
               <p className="font-bold text-purple-100">— Michal</p>
             </div>
@@ -375,7 +375,7 @@ export default function Home() {
             {/* Testimonial 3 - Student */}
             <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 rounded-3xl shadow-xl text-white">
               <blockquote className="text-lg leading-relaxed mb-6">
-                "This was one of the best tutorials I have ever seen. Instead of just copying somebody&apos;s code, this time I felt that I used my knowledge to write the code."
+                &quot;This was one of the best tutorials I have ever seen. Instead of just copying somebody&apos;s code, this time I felt that I used my knowledge to write the code.&quot;
               </blockquote>
               <p className="font-bold text-green-100">— Student</p>
             </div>
@@ -683,7 +683,7 @@ export default function Home() {
                 <span className="text-4xl font-bold text-green-600">$149</span>
                 <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">SAVE $100</span>
               </div>
-              <p className="text-lg font-semibold text-gray-900 mb-4">Here's how it works:</p>
+              <p className="text-lg font-semibold text-gray-900 mb-4">Here&apos;s how it works:</p>
             </div>
             
             <div className="space-y-4">
@@ -706,7 +706,7 @@ export default function Home() {
             
             <div className="border-t border-gray-300 mt-6 pt-4">
               <p className="text-sm text-gray-600">
-                💡 <strong>No risk:</strong> Only pay the remaining $100 if you're happy after the setup call
+                💡 <strong>No risk:</strong> Only pay the remaining $100 if you&apos;re happy after the setup call
               </p>
             </div>
           </div>
