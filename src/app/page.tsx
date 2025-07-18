@@ -731,7 +731,7 @@ export default function Home() {
                 if (typeof window !== 'undefined') {
                   (window as any).plausible?.('Setup Call Clicked');
                 }
-              } catch (error) {
+              } catch {
                 // Plausible not loaded, ignore
               }
             }}
