@@ -737,7 +737,7 @@ export default function Home() {
               }
             }}
           >
-            👉 Book Your Setup Call – ${PRICING.SETUP_CALL}
+            Book Your Setup Call – ${PRICING.SETUP_CALL}
           </a>
           
           <p className="text-gray-600 mt-4 text-sm">
