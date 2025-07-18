@@ -729,7 +729,8 @@ export default function Home() {
               // Track goal in Plausible
               try {
                 if (typeof window !== 'undefined') {
-                  (window as any).plausible?.('Setup Call Clicked');
+                  // @ts-ignore - Plausible analytics function
+                  window.plausible?.('Setup Call Clicked');
                 }
               } catch {
                 // Plausible not loaded, ignore
