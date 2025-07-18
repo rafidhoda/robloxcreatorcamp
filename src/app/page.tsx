@@ -2,6 +2,15 @@
 
 import { useEffect, useState } from 'react';
 
+// Pricing Constants
+const PRICING = {
+  SETUP_CALL: 49,
+  REMAINING_BALANCE: 100,
+  TOTAL_PRICE: 149,
+  ORIGINAL_PRICE: 249,
+  get SAVINGS() { return this.ORIGINAL_PRICE - this.TOTAL_PRICE; }
+} as const;
+
 // CTA Button Component
 const CtaButton = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -81,10 +90,10 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center md:items-start gap-3">
               <CtaButton>
-                Reserve Your Spot – $49 Setup Call
+                Reserve Your Spot – ${PRICING.SETUP_CALL} Setup Call
               </CtaButton>
               <p className="text-sm text-gray-600 text-center md:text-left">
-                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+                <span className="font-bold">Total: ${PRICING.TOTAL_PRICE}</span> • Pay ${PRICING.SETUP_CALL} now, ${PRICING.REMAINING_BALANCE} after setup call
               </p>
             </div>
           </div>
@@ -176,7 +185,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-gray-900">Code a Website</h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Your child builds a professional website with screenshots, description, and play button.
+                  Your child builds a professional website with screenshots, description, and download button
                 </p>
               </div>
             </div>
@@ -203,10 +212,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center gap-3 mt-12">
               <CtaButton>
-                Reserve Your Spot – $49 Setup Call
+                Reserve Your Spot – ${PRICING.SETUP_CALL} Setup Call
               </CtaButton>
               <p className="text-sm text-gray-600 text-center md:text-left">
-                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+                <span className="font-bold">Total: ${PRICING.TOTAL_PRICE}</span> • Pay ${PRICING.SETUP_CALL} now, ${PRICING.REMAINING_BALANCE} after setup call
               </p>
             </div>
         </div>
@@ -275,10 +284,10 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-3 mt-12">
               <CtaButton>
-                Reserve Your Spot – $49 Setup Call
+                Reserve Your Spot – ${PRICING.SETUP_CALL} Setup Call
               </CtaButton>
               <p className="text-sm text-gray-600 text-center md:text-left">
-                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+                <span className="font-bold">Total: ${PRICING.TOTAL_PRICE}</span> • Pay ${PRICING.SETUP_CALL} now, ${PRICING.REMAINING_BALANCE} after setup call
               </p>
             </div>
 
@@ -311,7 +320,7 @@ export default function Home() {
 
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  I was just <span className="font-semibold text-blue-600">9 years old</span> when I started building things on the computer—simple games, animations, movies, websites, and whatever else I could imagine.
+                  I was just <span className="font-semibold text-blue-600">9 years old</span> when I started building things on the computer—simple games, websites, and whatever else I could imagine.
                 </p>
 
                 <p>
@@ -327,7 +336,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  In a world of endless scrolling and passive consumption, I want your child to realize they can build something amazing.
+                  In a world of endless scrolling and passive consumption, I want your child to realize they can build something amazing—using the same tools they already love.
                 </p>
 
                 <p>
@@ -351,7 +360,7 @@ export default function Home() {
               What Parents & Students Say
             </h2>
             <p className="text-lg text-gray-700">
-              Rafid has been teaching kids to code for years. Here&apos;s what people love about his approach:
+              Rafid has been teaching kids to code for years. Here&apos;s what families love about his approach:
             </p>
           </div>
 
@@ -435,10 +444,10 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-3 mt-12">
               <CtaButton>
-                Reserve Your Spot – $49 Setup Call
+                Reserve Your Spot – ${PRICING.SETUP_CALL} Setup Call
               </CtaButton>
               <p className="text-sm text-gray-600 text-center md:text-left">
-                <span className="font-bold">Total: $149</span> • Pay $49 now, $100 after setup call
+                <span className="font-bold">Total: ${PRICING.TOTAL_PRICE}</span> • Pay ${PRICING.SETUP_CALL} now, ${PRICING.REMAINING_BALANCE} after setup call
               </p>
             </div>
         </div>
@@ -570,7 +579,7 @@ export default function Home() {
                 <div className="bg-blue-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0">1</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Pay $49 to book a 30-minute 1-on-1 setup call with Rafid
+                    Pay ${PRICING.SETUP_CALL} to book a 30-minute 1-on-1 setup call with Rafid
                   </h3>
                   <p className="text-gray-600 text-sm">(This session is non-refundable, and part of your total tuition)</p>
                 </div>
@@ -611,7 +620,7 @@ export default function Home() {
                 <div className="bg-green-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0">3</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Like what you see?</h3>
-                  <p className="text-gray-700 mb-3">Pay the remaining $100 after the call to lock in your seat</p>
+                  <p className="text-gray-700 mb-3">Pay the remaining ${PRICING.REMAINING_BALANCE} after the call to lock in your seat</p>
                   <p className="text-gray-600 text-sm">Camp runs over two days (6 hours total)</p>
                 </div>
               </div>
@@ -653,7 +662,7 @@ export default function Home() {
 
             <div className="bg-white p-6 rounded-2xl border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-3">What if we&apos;re not happy after the setup call?</h3>
-              <p className="text-gray-700">No problem! The setup call ($49) is the only non-refundable part. You only pay the remaining $100 if you decide to continue with the full camp after the call.</p>
+              <p className="text-gray-700">No problem! The setup call (${PRICING.SETUP_CALL}) is the only non-refundable part. You only pay the remaining ${PRICING.REMAINING_BALANCE} if you decide to continue with the full camp after the call.</p>
             </div>
           </div>
 
@@ -679,9 +688,9 @@ export default function Home() {
           <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 mb-8 max-w-2xl mx-auto">
             <div className="text-center mb-6">
               <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="text-2xl text-gray-400 line-through">$249</span>
-                <span className="text-4xl font-bold text-green-600">$149</span>
-                <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">SAVE $100</span>
+                <span className="text-2xl text-gray-400 line-through">${PRICING.ORIGINAL_PRICE}</span>
+                <span className="text-4xl font-bold text-green-600">${PRICING.TOTAL_PRICE}</span>
+                <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">SAVE ${PRICING.SAVINGS}</span>
               </div>
               <p className="text-lg font-semibold text-gray-900 mb-4">Here&apos;s how it works:</p>
             </div>
@@ -692,7 +701,7 @@ export default function Home() {
                   <p className="font-bold text-gray-900">Setup Call</p>
                   <p className="text-sm text-gray-600">30-min 1-on-1 with Rafid</p>
                 </div>
-                <div className="text-2xl font-bold text-blue-600">$49</div>
+                <div className="text-2xl font-bold text-blue-600">${PRICING.SETUP_CALL}</div>
               </div>
               
               <div className="flex items-center justify-between p-4 bg-green-50 rounded-xl border border-green-100">
@@ -700,13 +709,13 @@ export default function Home() {
                   <p className="font-bold text-gray-900">Full Camp Access</p>
                   <p className="text-sm text-gray-600">After you love the setup call</p>
                 </div>
-                <div className="text-2xl font-bold text-green-600">$100</div>
+                <div className="text-2xl font-bold text-green-600">${PRICING.REMAINING_BALANCE}</div>
               </div>
             </div>
             
             <div className="border-t border-gray-300 mt-6 pt-4">
               <p className="text-sm text-gray-600">
-                💡 <strong>No risk:</strong> Only pay the remaining $100 if you&apos;re happy after the setup call
+                💡 <strong>No risk:</strong> Only pay the remaining ${PRICING.REMAINING_BALANCE} if you&apos;re happy after the setup call
               </p>
             </div>
           </div>
@@ -717,11 +726,11 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
-            Book Your Setup Call – $49
+            Book Your Setup Call – ${PRICING.SETUP_CALL}
           </a>
           
           <p className="text-gray-600 mt-4 text-sm">
-            Setup call: $49 • Total tuition: $149 • Only 12 students per class
+            Setup call: ${PRICING.SETUP_CALL} • Total tuition: ${PRICING.TOTAL_PRICE} • Only 12 students per class
           </p>
       </div>
       </section>
