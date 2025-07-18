@@ -725,6 +725,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+            onClick={() => {
+              // Track goal in Plausible
+              if (typeof window !== 'undefined' && window.plausible) {
+                window.plausible('Setup Call Clicked');
+              }
+            }}
           >
             Book Your Setup Call – ${PRICING.SETUP_CALL}
           </a>
