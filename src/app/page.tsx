@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react';
 // Pricing Constants
 const PRICING = {
   SETUP_CALL: 49,
-  REMAINING_BALANCE: 100,
-  TOTAL_PRICE: 149,
-  ORIGINAL_PRICE: 249,
+  REMAINING_BALANCE: 200,
+  TOTAL_PRICE: 249,
+  ORIGINAL_PRICE: 399,
   get SAVINGS() { return this.ORIGINAL_PRICE - this.TOTAL_PRICE; }
 } as const;
 
